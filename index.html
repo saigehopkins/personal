@@ -17,6 +17,30 @@
           }
         })
 
+        $(".river").click(function(){
+        $(".river").toggleClass("enlarge");
+           })
+
+        $(".wood").click(function(){
+        $(".wood").toggleClass("enlarge");
+           })
+
+        $(".evil").click(function(){
+        $(".evil").toggleClass("enlarge");
+           })
+
+
+        $(".dirt").click(function(){
+        $(".dirt").toggleClass("enlarge");
+           })
+
+
+
+/*
+      $(".ireland").click(function(){
+      $(".ireland").toggleClass("imagesdown");
+    })    */
+
       });
     </script>
 
@@ -59,6 +83,50 @@
         font-family: georgia;
       }
 
+      .wood {
+
+        width: 286px;
+        height: 289px;
+        background-size: 105%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/14706862_1225024007568807_8133263479392824983_o.jpg?oh=e5d50c3712094df0f3dffccf29bc9183&oe=58D737C6);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .evil {
+
+        width: 286px;
+        height: 289px;
+        background-size: 105%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t1.0-9/14670848_1224988350905706_1779972746692542926_n.jpg?oh=2bd1b7723c5a5fc7d1b7be57033ed8ee&oe=58DCD5D0);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .dirt {
+
+        width: 286px;
+        height: 289px;
+        background-size: 105%;
+        background-image: url(http://previewcf.turbosquid.com/Preview/2014/08/01__13_43_05/Dry%20Dirt.jpg5abdefd1-945e-4133-9be1-9c97ad8cf329Larger.jpg);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .river {
+
+        width: 286px;
+        height: 289px;
+        background-size: 105%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t1.0-9/14724551_1224988364239038_3446576592733368126_n.jpg?oh=7e5a1f57aacdff80aaa85b2a723a5ce6&oe=590EE48E);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .enlarge {
+        width: 572px;
+        height: 578px;
+        background-size: 105%;
+        -webkit-transition: width 1s, height 1s;
+
+      }
+
       div {
 
         display: flex;
@@ -96,23 +164,23 @@
 
   <li class="one">
     <p>design</p>
-    <div id="wood"><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/14706862_1225024007568807_8133263479392824983_o.jpg?oh=e5d50c3712094df0f3dffccf29bc9183&oe=58D737C6">
-    </div>
 
-    <div id="dirt"><img src="http://previewcf.turbosquid.com/Preview/2014/08/01__13_43_05/Dry%20Dirt.jpg5abdefd1-945e-4133-9be1-9c97ad8cf329Larger.jpg">
+    <div class="wood"></div>
+
+    <div class="dirt">
     </div>
   </li>
 
   <li class="two">
     <p>prints</p>
-    <div id="cake"><img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14724551_1224988364239038_3446576592733368126_n.jpg?oh=7e5a1f57aacdff80aaa85b2a723a5ce6&oe=590EE48E">
+    <div class="river">
     </div>
   </li>
 
   <li class="three">
     <p>everything else</p>
-    <div id="cake"><img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14670848_1224988350905706_1779972746692542926_n.jpg?oh=2bd1b7723c5a5fc7d1b7be57033ed8ee&oe=58DCD5D0">
-    </div>
+
+    <div class="evil"></div>
   </li>
 
 </ul>
