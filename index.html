@@ -8,7 +8,7 @@
     <script>
       $(document).ready(function(){
 
-      $("img").click(function(){
+      $("img").hover(function(){
           if ( $('stretchd').toArray().includes($()[0]) ) {
             $(this).removeClass("stretchd");
           } else {
@@ -46,8 +46,8 @@
 
     img {
       -webkit-transition: width 2s, height 6s;
-      width: 360px; /*10000px*/
-      height: 210px; /*900px*/
+      width: 10000px;
+      height: 900px;
     }
 
     .stretchd {
