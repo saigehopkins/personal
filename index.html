@@ -26,12 +26,15 @@
            })
 
         $(".evil").click(function(){
-        $(".evil").toggleClass("enlarge");
+        $(".evil").toggleClass("enlargeWide");
            })
 
+         $(".dirt").click(function(){
+         $(".dirt").toggleClass("enlarge");
+            })
 
-        $(".dirt").click(function(){
-        $(".dirt").toggleClass("enlarge");
+        $(".beetle").click(function(){
+        $(".beetle").toggleClass("enlarge");
            })
 
       });
@@ -81,7 +84,7 @@
         width: 286px;
         height: 289px;
         background-size: 105%;
-        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/14706862_1225024007568807_8133263479392824983_o.jpg?oh=e5d50c3712094df0f3dffccf29bc9183&oe=58D737C6);
+        background-image: url(https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/16107303_1361302457274294_8830515150283851069_o.jpg?oh=8228ba40f1a232adc351155617a025d2&oe=590B1281);
         -webkit-transition: width 1s, height 1s;
       }
 
@@ -90,7 +93,16 @@
         width: 286px;
         height: 289px;
         background-size: 105%;
-        background-image: url(https://scontent.xx.fbcdn.net/v/t1.0-9/14670848_1224988350905706_1779972746692542926_n.jpg?oh=2bd1b7723c5a5fc7d1b7be57033ed8ee&oe=58DCD5D0);
+        background-image: url(https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/15994593_1361233030614570_608042252963844077_o.jpg?oh=de20af4d1a7f2ae695f85ed5c7ddc94a&oe=590CB296);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .beetle {
+
+        width: 286px;
+        height: 289px;
+        background-size: 105%;
+        background-image: url(https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/16107444_1361259530611920_3640271405290785213_o.jpg?oh=6f1feddd2921578258d3a8b38f2ba4e8&oe=590E30A0);
         -webkit-transition: width 1s, height 1s;
       }
 
@@ -99,7 +111,7 @@
         width: 286px;
         height: 289px;
         background-size: 105%;
-        background-image: url(http://previewcf.turbosquid.com/Preview/2014/08/01__13_43_05/Dry%20Dirt.jpg5abdefd1-945e-4133-9be1-9c97ad8cf329Larger.jpg);
+        background-image: url(https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/15972614_1361308760606997_6060958336388023117_o.jpg?oh=e44e2d23eab0ab491c15a8f63c7dc211&oe=5918506A);
         -webkit-transition: width 1s, height 1s;
       }
 
@@ -108,13 +120,21 @@
         width: 286px;
         height: 289px;
         background-size: 105%;
-        background-image: url(https://scontent.xx.fbcdn.net/v/t1.0-9/14724551_1224988364239038_3446576592733368126_n.jpg?oh=7e5a1f57aacdff80aaa85b2a723a5ce6&oe=590EE48E);
+        background-image: url(https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/15972768_1361296230608250_5586683360603713372_o.jpg?oh=a91e454a70606da4e0291edd49c5b6e9&oe=590E0670);
         -webkit-transition: width 1s, height 1s;
       }
 
       .enlarge {
         width: 572px;
         height: 578px;
+        background-size: 105%;
+        -webkit-transition: width 1s, height 1s;
+
+      }
+
+      .enlargeWide {
+        width: 1144px;
+        height: 1156px;
         background-size: 105%;
         -webkit-transition: width 1s, height 1s;
 
@@ -155,24 +175,24 @@
 
     <ul class="pics">
 
-  <li class="one">
+  <li class="design">
     <p>design</p>
 
     <div class="wood"></div>
 
-    <div class="dirt">
-    </div>
+    <div class="dirt"></div>
   </li>
 
-  <li class="two">
+  <li class="prints">
     <p>prints</p>
     <div class="river">
     </div>
   </li>
 
-  <li class="three">
+  <li class="ee">
     <p>everything else</p>
 
+    <div class="beetle"></div>
     <div class="evil"></div>
   </li>
 
