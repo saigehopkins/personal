@@ -37,6 +37,10 @@
         $(".beetle").toggleClass("enlarge");
            })
 
+           $(".h").click(function(){
+           $(".h").toggleClass("enlarge");
+              })
+
       });
     </script>
 
@@ -124,10 +128,19 @@
         -webkit-transition: width 1s, height 1s;
       }
 
+      .h {
+
+        width: 286px;
+        height: 289px;
+        background-size: 102%;
+        background-image: url(https://scontent-lga3-1.xx.fbcdn.net/v/t31.0-8/15937085_1361324747272065_2599533377516265134_o.jpg?oh=2d8d32383e4064e1e1a93bd127d12e49&oe=5924C5E0);
+        -webkit-transition: width 1s, height 1s;
+      }
+
       .enlarge {
         width: 572px;
         height: 578px;
-        background-size: 105%;
+        background-size: 102%;
         -webkit-transition: width 1s, height 1s;
 
       }
@@ -185,8 +198,8 @@
 
   <li class="prints">
     <p>prints</p>
-    <div class="river">
-    </div>
+    <div class="river"></div>
+    <div class="h"></div>
   </li>
 
   <li class="ee">
