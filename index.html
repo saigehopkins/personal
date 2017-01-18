@@ -9,14 +9,9 @@
     <script>
       $(document).ready(function(){
 
-      $("img").hover(function(){
-          if ( $('stretchd').toArray().includes($()[0]) ) {
-            $(this).removeClass("stretchd");
-          } else {
-            $("img").removeClass("stretchd");
-            $(this).addClass("zoom");
-          }
-        })
+        $(".face").click(function(){
+        $(".face").addClass("morph");
+           })
 
         $(".river").click(function(){
         $(".river").toggleClass("enlarge");
@@ -34,9 +29,41 @@
          $(".dirt").toggleClass("enlarge");
             })
 
-        $(".beetle").click(function(){
-        $(".beetle").toggleClass("enlarge");
-           })
+            $(".beetle").click(function(){
+            $(".beetle").toggleClass("enlarge");
+               })
+
+           $(".one").click(function(){
+           $(".one").toggleClass("enlargeWide");
+              })
+
+           $(".two").click(function(){
+           $(".two").toggleClass("enlargeWide");
+              })
+
+           $(".three").click(function(){
+           $(".three").toggleClass("enlarge");
+              })
+
+           $(".four").click(function(){
+           $(".four").toggleClass("enlarge");
+              })
+
+           $(".five").click(function(){
+           $(".five").toggleClass("enlarge");
+              })
+
+           $(".six").click(function(){
+           $(".six").toggleClass("enlarge");
+              })
+
+           $(".seven").click(function(){
+           $(".seven").toggleClass("enlarge");
+              })
+
+           $(".eight").click(function(){
+           $(".eight").toggleClass("enlarge");
+              })
 
            $(".h").click(function(){
            $(".h").toggleClass("enlarge");
@@ -47,29 +74,26 @@
 
     <style>
 
-    .pics img{
-      width: 286px;
-      height: 370px;
-}
-
-    img {
-      -webkit-transition: width 2s, height 6s;
-      width: 10000px;
-      height: 900px;
+    .face {
+      position: absolute;
+      width: 220px;
+      height: 100px;
+      left: 5px;
+      top: 85px;
+      background-size: 105%;
+      background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/13131378_1070169103054299_2379054614010184333_o.jpg?oh=01d2f90a2aad88a20f37c9e5f3ec5bd6&oe=59106030);
+      -webkit-transition: width 1s, height 1s;
     }
 
-    .stretchd {
-      width: 800px;
-      height: 900px;
-      -webkit-transition: width 2s, height 6s;
-    }
+    .morph {
+      position: absolute;
+      width: 110px;
+      height: 50px;
+      left: 300px;
+      top: 56px;
+      -webkit-transition: width 2s, left 3s, height 2s, top 1s, background-image 3s;
+      background-image: url(https://imagizer.imageshack.us/v2/223x120q90/r/923/XifqHb.png);
 
-    .zoom {
-      width: 350px;
-      height: 200px;
-      top: -4000px
-      right:-3000px;
-      -webkit-transition: width 2s, height 7s;
     }
 
       #header p{
@@ -138,6 +162,86 @@
         -webkit-transition: width 1s, height 1s;
       }
 
+      .one {
+
+        width: 286px;
+        height: 289px;
+        background-size: 102%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/15975084_1361274430610430_1919667068960497554_o.jpg?oh=e244dc2124ba32f2cf645d127bed1b69&oe=591771A0);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .two {
+
+        width: 286px;
+        height: 289px;
+        background-size: 102%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/15937239_1361274490610424_8695321006795955702_o.jpg?oh=2559569e6e20980d2f4773c485972411&oe=5923DCB6);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .three {
+
+        width: 286px;
+        height: 289px;
+        background-size: 102%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/15995170_1361274427277097_5460914987543630552_o.jpg?oh=a8dd10ed47878871617f6a0b469a767b&oe=590DAF54);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .four {
+
+        width: 286px;
+        height: 289px;
+        background-size: 102%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/15994640_1361274530610420_4352937693967524436_o.jpg?oh=4d5ff6175dd11c9f2e8c165ff3640dab&oe=591B8D58);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .five {
+
+        width: 286px;
+        height: 289px;
+        background-size: 102%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/15975317_1361274413943765_7088259382427564721_o.jpg?oh=e5c4802e0b473eb52ac7647d12944234&oe=5923D983);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .six {
+
+        width: 286px;
+        height: 289px;
+        background-size: 102%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/15994825_1361274567277083_603875858416809103_o.jpg?oh=5786c287e4ab1a833e165b3379978723&oe=590FC17F);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .seven {
+
+        width: 286px;
+        height: 289px;
+        background-size: 102%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/15972540_1361274423943764_4169591207916514550_o.jpg?oh=81f49b3c5c52d49a2ae3c0a59faa0757&oe=59052615);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .eight {
+
+        width: 286px;
+        height: 289px;
+        background-size: 102%;
+        background-image: url(https://scontent.xx.fbcdn.net/v/t31.0-8/16113267_1361274527277087_5117162747070160008_o.jpg?oh=51d8838ba9cf915c7753991536b7a107&oe=58D7132A);
+        -webkit-transition: width 1s, height 1s;
+      }
+
+      .wboy {
+
+        width: 20px;
+        height: 22px;
+        margin-top: 200px;
+        -webkit-transition: width 1s, height 1s;
+      }
+
       .enlarge {
         width: 572px;
         height: 578px;
@@ -167,6 +271,7 @@
       ul {
         display: flex;
         list-style-type: none;
+        margin-top: 150px;
 
       }
 
@@ -182,10 +287,9 @@
 
   <body>
 
-    <section id="header"><p>Art</p></section>
+    <section id="header"><p>personal art/design</p></section>
 
-    <div class="face"><img src="https://scontent.xx.fbcdn.net/v/t31.0-8/13131378_1070169103054299_2379054614010184333_o.jpg?oh=01d2f90a2aad88a20f37c9e5f3ec5bd6&oe=59106030">
-    </div>
+    <div class="face"></div>
 
     <ul class="pics">
 
@@ -195,6 +299,10 @@
     <div class="wood"></div>
 
     <div class="dirt"></div>
+
+    <div class="wboy"><a href="https://8286284448.tumblr.com/" target="_blank"><img src="http://imageshack.com/a/img924/7205/xPdeqz.png"/></a></div>
+
+
   </li>
 
   <li class="prints">
@@ -208,6 +316,16 @@
 
     <div class="beetle"></div>
     <div class="evil"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+    <div class="eight"></div>
+
+
   </li>
 
 </ul>
